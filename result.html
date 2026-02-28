@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Screenplay</h2>
+    <pre>{{ data.screenplay }}</pre>
+
+    <h2>Characters</h2>
+    <pre>{{ data.characters }}</pre>
+
+    <h2>Sound Design</h2>
+    <pre>{{ data.sound }}</pre>
+
+    <h2>Cinematography</h2>
+    <pre>{{ data.cinematography }}</pre>
+
+    <h2>Storyboard Concepts</h2>
+    <pre>{{ data.storyboard }}</pre>
+
+    <h2>Budget</h2>
+    <pre>{{ data.budget }}</pre>
+
+    <a href="/export">Download PDF</a>
+</div>
+
+</body>
+</html>
